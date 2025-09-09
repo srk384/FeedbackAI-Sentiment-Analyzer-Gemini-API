@@ -6,7 +6,9 @@ const Reviews = () => {
   // Function to fetch reviews
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/reviews");
+      const response = await fetch(
+        import.meta.env.VITE_API_BASE_URL + "/reviews"
+      );
       const data = await response.json();
       setReviews(data); // Update state with new reviews
     } catch (error) {

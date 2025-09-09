@@ -35,7 +35,7 @@ const Home = () => {
     const question = inputVal;
 
     try {
-      const response = await fetch("http://localhost:3000/submit", {
+      const response = await fetch(import.meta.env.VITE_API_BASE_URL+"/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
