@@ -14,7 +14,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/reviews" element={<Reviews />} />
+            {/* <Route path="/reviews" element={<Reviews />} /> */}
             <Route path="*" element={<h1 className='flex justify-center items-center min-h-[70vh] text-3xl text-gray-400'>404 - Page Not Found</h1>} />
           </ Routes>
           <Footer />
