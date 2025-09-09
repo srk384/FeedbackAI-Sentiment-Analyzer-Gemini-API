@@ -1,9 +1,8 @@
-import WelcomePage from './components/welcomePage'
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import './App.css'
+import Footer from './components/Footer'
 import Home from './components/Home'
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Reviews from './pages/Reviews'
 
 function App() {
