@@ -16,7 +16,7 @@ const WelcomePage = () => {
   
     return (
       <div className="flex flex-col gap-8 items-center justify-center h-[40vh] text-white pt-16">
-        <h1 className="text-2xl sm:text-4xl font-bold flex">
+        <h1 className="text-2xl sm:text-6xl font-bold flex">
         Explore{" "}
           <motion.span
             key={index}
