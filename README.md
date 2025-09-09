@@ -63,7 +63,7 @@ Client/
 
 ### 1. Clone the repository
 ```powershell
-git clone <repo-url>
+git clone https://github.com/srk384/FeedbackAI-Sentiment-Analyzer-Gemini-API.git
 cd "FeedbackAI"
 ```
 
