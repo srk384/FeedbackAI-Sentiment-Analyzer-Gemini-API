@@ -29,8 +29,10 @@ const responseGenerator = async (question) => {
     }
 }
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
+
+// Lightweight endpoint to keep the server warm
+app.get('/wake', (req, res) => {
+    res.status(200).json({ status: 'awake', time: new Date().toISOString() })
 })
 
 app.post('/submit', async (req, res) => {
